@@ -48,7 +48,7 @@ Ten skrypt umożliwia automatyczne tworzenie i usuwanie konfiguracji dla aplikac
 
 1. Sklonuj repozytorium:
    ```bash
-   git clone https://github.com/TwojaNazwaUzytkownika/nazwa-repo.git
+   git clone https://github.com/eincherjar/ducs.git
    ```
 2. Upewnij się, że masz zainstalowane wymagane oprogramowanie (Supervisor, Caddy, etc.).
 3. Przejdź do folderu z aplikacją Django i uruchom skrypt:
