@@ -23,10 +23,24 @@ Ten skrypt umożliwia automatyczne tworzenie i usuwanie konfiguracji dla aplikac
 
 - System operacyjny: Linux (Ubuntu lub inna dystrybucja oparta na Debianie).
 - Zainstalowane pakiety:
-  - `supervisor`
+  - `supervisor`:
+    ```bash
+      python -m pip install supervisor
+    ```
   - `ufw` (opcjonalnie, do odblokowywania portów)
-  - `caddy`
+  - `caddy`:
+    ```bash
+      sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+      curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+      curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+      sudo apt update
+      sudo apt install caddy
+    ```
   - `stat` (zwykle dostępny domyślnie)
+  - `uvicorn`:
+    ```bash
+      python -m pip install uvicorn
+    ```
 - Wirtualne środowisko Python (np. `venv`).
 - Uprawnienia root (do edycji plików konfiguracyjnych i dodawania użytkownika do grupy).
 
