@@ -54,7 +54,7 @@ Ten skrypt umożliwia automatyczne tworzenie i usuwanie konfiguracji dla aplikac
 3. Przejdź do folderu z aplikacją Django i uruchom skrypt:
    ```bash
    cd /sciezka/do/aplikacji/django
-   sudo /sciezka/do/skryptu/skrypt.sh
+   sudo /sciezka/do/skryptu/manage_django_app.sh
    ```
 4. Wykonaj jedną z dostępnych opcji:
    - Tworzenie nowej konfiguracji
